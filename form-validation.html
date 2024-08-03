@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" onsubmit="validateForm(event)">
+        <table>
+            <tr>
+                <td>
+                    <label for="username">Name</label>
+                </td>
+                <td>
+                    &nbsp;
+                    <input type="text" id="username" name="name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">Email</label>
+                </td>
+                <td>
+                    &nbsp;
+                    <input type="text" id="email" name="email">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="password">Password</label>
+                </td>
+                <td>
+                    &nbsp;
+                    <input type="password" id="password" name="password">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="number">Phone</label>
+                </td>
+                <td>
+                    &nbsp;
+                    <input type="tel" id="number" name="phone">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="dob">D.O.B</label>
+                </td>
+                <td>
+                    &nbsp;
+                    <input type="date" id="dob" name="dob">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Gender</label>
+                </td>
+                <td>
+                    <input type="radio" id="male" name="gender">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender">
+                    <label for="other">Other</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="query">Query</label>
+                </td>
+                <td>
+                    <select name="query" id="query">
+                        <option value="0">Refund/Replacement</option>
+                        <option value="1">Order not received</option>
+                        <option value="2">Cashback related</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="message">Message</label>
+                </td>
+                <td>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="please add your message here"></textarea>
+                </td>
+            </tr>
+        </table>
+        <div>
+            <input type="checkbox" checked>
+            <label for="agreement">I agree to receive promotional messages.</label>
+        </div>
+        <br>
+        <div>
+            <p style="color: red; display: none;" id="errorMessage">error*</p>
+        </div>
+        <div>
+            <input type="submit" value="Contact">
+            <input type="reset">
+        </div>
+    </form>
+    <script src="/js/form-validation.js"></script>
+</body>
+</html>

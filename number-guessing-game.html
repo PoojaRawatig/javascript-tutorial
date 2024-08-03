@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="/css/number-guessing-game.css">
+</head>
+<body>
+    <div class="heading">
+        <h1>Number Guessing Game</h1>
+    </div>
+
+    <div id="container">
+        <img src="/media/happy.png" id="happy-emoji" height="100px" width="100px" alt="">
+        <p id="lifes">10 Lifes</p>
+        <div>
+            <input type="number" id="num" placeholder="guess a number">
+        </div>
+        <div>
+            <button id="guess" onclick="guessNumber()">Guess</button>
+            <button id="play-again" onclick="playAgain()">Play Again</button>
+        </div>
+        <p id="message"></p>
+        
+    </div>
+    <script src="/js/number-guessing-game.js"></script>
+</body>
+</html>

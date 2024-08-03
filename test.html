@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        span{
+            color: red;
+            cursor: pointer;
+        }
+        li{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>To-Do List</h1>
+    <input type="text" id="item">
+    <button onclick="addItem()">Add</button>
+    <ul id="to-do-list" onclick="onItemClick(event)">
+        <li>Mango  <span>X</span></li>
+        <li>Apple <span>X</span></li>
+        <li>Banana <span>X</span></li>
+    </ul>
+    <script src="/js/test.js"></script>
+</body>
+</html>

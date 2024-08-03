@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do</title>
+    <style>
+        div li{
+            display: inline-block;
+        }
+        div span{
+            cursor: pointer;
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="item">
+    <ul id="list" onclick="onItemClick(event)">
+       
+            <li>
+                <div>
+                    Apple 
+                    <span>&nbsp; X </span>
+                </div>
+            </li> 
+           
+            <li>
+                <div>
+                    Mango 
+                    <span>&nbsp; X </span>
+                </div>
+            </li> 
+
+            <li>
+                <div>
+                    Orange 
+                    <span>&nbsp; X </span>
+                </div>
+            </li> 
+    </ul>
+    <button onclick="addListItem()">Add Item</button>
+    <script src="/js/to-do-list.js"></script>
+</body>
+</html>

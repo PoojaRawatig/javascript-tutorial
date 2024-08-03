@@ -1,0 +1,66 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.heading{
+    margin: 20px;
+}
+
+.heading > h1{
+    text-align: center;
+}
+
+#container{
+    display: flex;
+    height: auto;
+    width: 30%;
+    border: 1px solid #d3d3d3;
+    margin: 20px auto;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px gray;
+    flex-direction: column;
+}
+
+input{
+    margin: 20px;
+}
+
+button{
+    background-color: green;
+    color: #ffff;
+    padding: 8px;
+    border: 1px solid green;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px gray;
+}
+
+#message{
+    display: none;
+    color: red;
+    margin: 20px;
+}
+
+#lifes {
+    font-weight: bold;
+    font-style: italic;
+    color: green;
+    font-size: 25px;
+}
+
+button[disabled]{
+    background-color: gray;
+    border: 1px solid gray;
+}
+
+#happy-emoji{
+    display: none;
+    margin: 20px;
+}
+
+#play-again{
+    display: none;
+}

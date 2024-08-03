@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="/css/calculator.css">
+</head>
+<body>
+    <div id="heading">
+        <h1>Calculator</h1>
+    </div>
+    <div id="container">
+        <div id="screen">
+            <input id="input-screen" type="text" readonly value="0">
+        </div>
+        <div id="buttons">
+            <div id="numeric-buttons">
+                <button onclick="appendInput('1')">1</button>
+                <button onclick="appendInput('2')">2</button>
+                <button onclick="appendInput('3')">3</button>
+                <button onclick="appendInput('4')">4</button>
+                <button onclick="appendInput('5')">5</button>
+                <button onclick="appendInput('6')">6</button>
+                <button onclick="appendInput('7')">7</button>
+                <button onclick="appendInput('8')">8</button>
+                <button onclick="appendInput('9')">9</button>
+            </div>
+            <div id="operator-buttons">
+                <button onclick="appendInput('+')">+</button>
+                <button onclick="appendInput('-')">-</button>
+                <button onclick="appendInput('*')">x</button>
+                <button onclick="appendInput('/')">/</button>
+                <button onclick="appendInput('0')">0</button>
+                <button onclick="calculate()">=</button>
+                <button onclick="reset()">C</button>
+            </div>
+        </div>
+    </div>
+    <script src="/js/calculator.js"></script>
+</body>
+</html>
